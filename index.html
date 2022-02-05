@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto-1</title>
+  </head>
+  <body>
+
+    <section class="reservation">
+      <div class="containerForm" id="containerForm">
+        <form action="" class="form" id="form">
+          <input type="text" name="name" placeholder="Nombre y apellido" class="input">
+          <select name="services" class="input input--select">
+              <optgroup label="Uñas">
+                <option value="ManicureSencillo">Manicure sencillo</option>
+                <option value="Pedicure">Pedicure</option>
+                <option value="Acrilicas">Acrilicas</option>
+                <option value="Postizas">Postizas</option>
+              </optgroup>
+              <optgroup label="Cabello">
+                <option value="Cepillado">Cepillado</option>
+                <option value="Tintura">Tintura</option>
+                <option value="Corte">Corte</option>
+                <option value="Trenzas">Trenzas</option>
+              </optgroup>
+              <optgroup label="Facial">
+                <option value="LimpiezaFacial">Limpieza facial</option>
+                <option value="DepilacionCejas">Depilacion cejas</option>
+                <option value="DepilacionCejasBozo">Depilacion cejas y bozo</option>
+                <option value="PigmentaciónCejas">Pigmentación de cejas</option>
+                <option value="PigmentaciónBarba">Pigmentación de Barba</option>
+              </optgroup>
+          </select>
+          <input type="password" placeholder="Contraseña" minlength="4" autocomplete="1234" class="input">
+          <input type="date" placeholder="Fecha" class="input">
+          <select name="services" class="input input--select">
+              <option value="8:00 AM">8:00 AM</option>
+              <option value="9:00 AM">9:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+          </select>
+          <div class="form__buttons">
+            <button class="form__button form__button--save" id="formBtnSave">Guardar</button>
+            <button class="form__button form__button--cancel" id="formBtnCancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="reservation__container">
+        <div class="reservation__head">
+          <button class="reservation__button" id="btnShow">Agendar cita</button>
+        </div>
+        <div class="reservation__list">
+
+        </div>
+      </div>
+    </section>
+    <!-- <input type="date" aria-current="date" id="name" />
+    <button id="btn"></button>
+    <div class="container" id="container">
+    </div> -->
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
